@@ -1,10 +1,9 @@
 const express = require('express');
 
 const app = express();
+const connectDb = require('./Config/db');
 
-app.get('/', (req, res) => {
-  res.json({ msg: 'hello world' });
-});
+connectDb();
 
 //define routes
 
