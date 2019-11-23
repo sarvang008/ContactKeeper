@@ -3,6 +3,10 @@ const express = require('express');
 const app = express();
 const connectDb = require('./Config/db');
 
+//init middleware for json post request
+app.use(express.json({ extended: false }));
+
+//Connect database
 connectDb();
 
 //define routes
