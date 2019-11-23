@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const connectDb = require('./Config/db');
+const connectDb = require('./config/db');
 
 //init middleware for json post request
 app.use(express.json({ extended: false }));
