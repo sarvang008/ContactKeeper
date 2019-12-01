@@ -27,8 +27,8 @@ Navbar.propTypes = {
   icon: PropTypes.string.isRequired
 };
 Navbar.defaultProps = {
-  title: 'Contact Keeper',
-  icon: 'fa fa-id-card-alt'
+  title: ' Contact Keeper',
+  icon: 'fas fa-id-card-alt'
 };
 
 export default Navbar;
