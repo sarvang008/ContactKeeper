@@ -11,6 +11,7 @@ import AlertState from './context/alert/AlertState';
 
 import Login from './componenets/auth/Login';
 import Register from './componenets/auth/Register';
+import Alerts from './componenets/layout/Alerts';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Fragment>
               <Navbar />
               <div className='container'>
+                <Alerts />
                 <Switch>
                   <Route exact path='/' component={Home} />
                   <Route exact path='/about' component={About} />
